@@ -17,7 +17,7 @@ import json
 import tempfile
 # from langchain_community import
 load_dotenv()
-api_key=os.environ("GOOGLE_API_KEY")
+api_key=os.getenv("GOOGLE_API_KEY")
 
 llm = GoogleGenerativeAI(google_api_key=api_key,model="models/text-bison-001")
 
