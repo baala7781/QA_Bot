@@ -11,11 +11,13 @@ from langchain.document_loaders import UnstructuredImageLoader
 from langchain.prompts import PromptTemplate
 from langchain_community.document_loaders import YoutubeLoader
 from langchain.chains import RetrievalQA
+from dotenv import load_dotenv
 import os
 import json
 import tempfile
 # from langchain_community import
-api_key=os.environ["GOOGLE_API_KEY"]
+load_dotenv()
+api_key=os.environ("GOOGLE_API_KEY")
 
 llm = GoogleGenerativeAI(google_api_key=api_key,model="models/text-bison-001")
 
