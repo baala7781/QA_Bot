@@ -15,9 +15,9 @@ import os
 import json
 import tempfile
 # from langchain_community import
-# api_key="AIzaSyAgb99S-u40oEh14jv-xD_jiqd3OGdp9Dc"
-os.environ["GOOGLE_API_KEY"] = "AIzaSyAgb99S-u40oEh14jv-xD_jiqd3OGdp9Dc"
-llm = GoogleGenerativeAI(model="models/text-bison-001")
+api_key=os.environ["GOOGLE_API_KEY"]
+
+llm = GoogleGenerativeAI(google_api_key=api_key,model="models/text-bison-001")
 
 def split_data(data):
     splitter= RecursiveCharacterTextSplitter(
