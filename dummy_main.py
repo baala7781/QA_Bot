@@ -11,7 +11,7 @@ from langchain.document_loaders import UnstructuredImageLoader
 from langchain.prompts import PromptTemplate
 from langchain_community.document_loaders import YoutubeLoader
 from langchain.chains import RetrievalQA
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 import json
 import tempfile
