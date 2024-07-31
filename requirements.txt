@@ -8,3 +8,4 @@ Requests==2.32.3
 streamlit==1.36.0
 unstructured
 pdfminer.six
+pillow_heif
