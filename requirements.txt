@@ -9,3 +9,11 @@ streamlit==1.36.0
 unstructured
 pdfminer.six
 pillow_heif
+matplotlib
+tika
+pdf2image
+pytesseract
+PyMuPDF
+beautifulsoup4
+PyYAML
+opencv-python
