@@ -60,13 +60,16 @@ def main():
             st.markdown(prompt)
         # Display assistant response in chat message container
         with st.chat_message("assistant"):
-            try:
-                response = st.write_stream(response_generator(upload_option,url,prompt))
-                st.session_state.messages.append({"role": "assistant", "content": response})
-            except:
-                response="Some eror caused!!"
-                st.write(response)
-                st.session_state.messages.append({"role": "assistant", "content": response})
+            response = st.write_stream(response_generator(upload_option,url,prompt))
+            st.session_state.messages.append({"role": "assistant", "content": response})
+            # try:
+            #     response = st.write_stream(response_generator(upload_option,url,prompt))
+            #     st.session_state.messages.append({"role": "assistant", "content": response})
+            # except:
+            #     response="Some eror caused!!"
+            #     st.write(response)
+            #     st.session_state.messages.append({"role": "assistant", "content": response})
+            
 
         # Add assistant response to chat history
         
