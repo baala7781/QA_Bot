@@ -16,5 +16,5 @@ pytesseract
 PyMuPDF
 beautifulsoup4
 PyYAML
-opencv-python-headless
+opencv-python
 unstructured_inference
