@@ -4,7 +4,7 @@ langchain_google_genai==1.0.8
 Pillow==10.4.0
 python_docx==1.1.2
 pytube==15.0.0
-Requests==2.32.3
+requests==2.32.3
 streamlit==1.36.0
 unstructured
 pdfminer.six
@@ -17,3 +17,4 @@ PyMuPDF
 beautifulsoup4
 PyYAML
 opencv-python
+unstructured_inference
