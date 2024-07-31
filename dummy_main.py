@@ -17,8 +17,8 @@ import json
 import tempfile
 # from langchain_community import
 # load_dotenv()
-api_key=os.getenv("GOOGLE_API_KEY")
-
+# api_key=os.getenv("GOOGLE_API_KEY")
+os.getenv["GOOGLE_API_KEY"]="AIzaSyAgb99S-u40oEh14jv-xD_jiqd3OGdp9Dc"
 llm = GoogleGenerativeAI(google_api_key=api_key,model="models/text-bison-001")
 
 def split_data(data):
