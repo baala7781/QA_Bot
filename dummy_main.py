@@ -1,12 +1,14 @@
 #importing all necessary modules
 from langchain_community.document_loaders import TextLoader, UnstructuredURLLoader
+import streamlit as st
 # from langchain_community.llms import GooglePalm
 from langchain_google_genai import GoogleGenerativeAI
 from langchain_community.vectorstores import FAISS
-from langchain.document_loaders import Docx2txtLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.document_loaders import Docx2txtLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain.document_loaders import UnstructuredImageLoader
+from langchain_community.document_loaders import UnstructuredImageLoader
+
 # from youtube_transcript_api import YouTubeTranscriptApi
 from langchain.prompts import PromptTemplate
 from langchain_community.document_loaders import YoutubeLoader
